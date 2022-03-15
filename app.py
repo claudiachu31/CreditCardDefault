@@ -21,11 +21,11 @@ import joblib
 
 @app.route("/", methods = ["GET", "POST"])
 def index(): 
-    model_1 = 'Logistic Regression Model predicts: '
-    model_2 = 'Decision Tree Model predicts: '
-    model_3 = 'Neural Network Model predicts: '
-    model_4 = 'Random Forest Model predicts: '
-    model_5 = 'Gradient Booster Model predicts: '
+    model_1 = 'Logistic Regression Model predicts   : '
+    model_2 = 'Decision Tree Model predicts         : '
+    model_3 = 'Neural Network Model predicts        : '
+    model_4 = 'Random Forest Model predicts         : '
+    model_5 = 'Gradient Booster Model predicts      : '
     if request.method == "POST":
         income = request.form.get("income")
         age = request.form.get("age")
